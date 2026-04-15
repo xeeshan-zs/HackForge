@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "get-shit-done": {
+      "command": "npx",
+      "args": ["@xinyuzjj/get-shit-done-mcp"]
+    }
+  }
+}
