@@ -15,12 +15,21 @@ export default function Hero() {
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 pt-24">
-      <div className="hero-particles" />
-      <div className="tech-grid-overlay opacity-70" />
-      <div className="tech-orb left-[8%] top-[20%] h-36 w-36 bg-cyan-400/25" />
-      <div className="tech-orb right-[10%] top-[16%] h-44 w-44 bg-orange-500/25 [animation-delay:1.4s]" />
-      <div className="tech-orb bottom-[16%] left-[26%] h-24 w-24 bg-violet-400/25 [animation-delay:2.1s]" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-[var(--color-bg)]" />
+      <div className="hero-particles" aria-hidden="true" />
+      <div className="tech-grid-overlay opacity-70" aria-hidden="true" />
+      <div className="tech-orb left-[8%] top-[20%] h-36 w-36 bg-cyan-400/25" aria-hidden="true" />
+      <div
+        className="tech-orb right-[10%] top-[16%] h-44 w-44 bg-orange-500/25 [animation-delay:1.4s]"
+        aria-hidden="true"
+      />
+      <div
+        className="tech-orb bottom-[16%] left-[26%] h-24 w-24 bg-violet-400/25 [animation-delay:2.1s]"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-[var(--color-bg)]"
+        aria-hidden="true"
+      />
 
       <motion.div
         initial="hidden"
@@ -33,10 +42,10 @@ export default function Hero() {
       >
         <motion.div
           variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } }}
-          className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan-300/35 bg-cyan-400/10 px-4 py-2 text-[11px] uppercase tracking-[0.22em] text-cyan-100"
+          className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan-300/35 bg-cyan-400/10 px-4 py-2 text-[11px] uppercase tracking-[0.14em] text-cyan-100"
         >
           <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-cyan-300" />
-          Future-ready Build Sprint
+          Future-Ready Build Sprint
         </motion.div>
         <motion.p
           variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } }}
@@ -54,7 +63,7 @@ export default function Hero() {
           variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } }}
           className="mt-3 max-w-2xl text-xl text-zinc-200 md:text-2xl"
         >
-          Forge Your Future with Pakistan&apos;s most electric student hack showdown.
+          Forge Your Future with Pakistan’s most electric student hack showdown.
         </motion.p>
 
         <motion.div
