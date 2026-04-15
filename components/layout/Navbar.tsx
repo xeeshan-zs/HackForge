@@ -25,23 +25,23 @@ export default function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition ${
-        scrolled ? "bg-black/45 backdrop-blur-md" : "bg-transparent"
+        scrolled ? "bg-black/30 backdrop-blur-xl" : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6">
         <a href="#" className="font-display text-xl font-bold tracking-wide">
           <span className="mr-2">⚒</span>
-          <span className="bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-gold)] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-cyan-300 via-[var(--color-primary)] to-[var(--color-gold)] bg-clip-text text-transparent">
             HackForge
           </span>
         </a>
 
-        <div className="hidden items-center gap-7 md:flex">
+        <div className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/5 p-2 backdrop-blur-xl md:flex">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-[var(--color-muted)] transition hover:text-[var(--color-text)]"
+              className="rounded-full px-3 py-1 text-sm text-[var(--color-muted)] transition hover:bg-white/10 hover:text-[var(--color-text)]"
             >
               {link.label}
             </a>
@@ -67,7 +67,7 @@ export default function Navbar() {
       <motion.div
         initial={false}
         animate={{ height: open ? "auto" : 0, opacity: open ? 1 : 0 }}
-        className="overflow-hidden border-t border-[var(--color-border)] bg-[var(--color-surface)] md:hidden"
+        className="overflow-hidden border-t border-[var(--color-border)] bg-[var(--color-surface)]/95 backdrop-blur-xl md:hidden"
       >
         <div className="flex flex-col px-4 py-3">
           {links.map((link) => (
