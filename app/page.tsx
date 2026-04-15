@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <main className="relative">
+      <main className="app-shell relative">
         <Hero />
         <About />
         <Categories />
